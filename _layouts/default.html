@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script>
+      //Prevent flash of unstyled content
+      $('html').addClass('hidden');
+      $(function() {
+          $('html').removeClass('hidden');
+      }
+    </script>
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name" id="name" onclick="window.location = '/'">Reese Anson Wilson</h1>
+      <h2 class="project-tagline" id=hideMail></h2>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <a id="back" href="javascript:history.back()">Go Back</a>
+      </footer>
+      <script>
+        $(function(){
+
+          // populate email address in a (hopefully) bot-unfriendly way
+          var a = ["&#64;&#110;&#115;&#111;&#110;", "&#114;&#101;&#101;&#115;&#101;", "&#99;&#111;&#109;", "&#119;&#105;&#108;&#115;&#111;&#110;&#46;"];
+          var b = a[1] + a[0] + a[3] + a[2];
+          $("#hideMail").html(b);
+
+          if (window.location.pathname === "/") {
+            $("#back").hide();
+          }
+
+        });
+
+      </script>
+    </main>
+  </body>
+</html>

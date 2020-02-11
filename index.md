@@ -1,0 +1,16 @@
+---
+layout: default
+---
+## Hello
+
+I'm a self-motivated backend/devops-focused coder, trained as an engineer, with ~12 years experience in the heavily regulated healthcare industry. I love staying up to date on the latest technologies, best practices and trends, especially in the areas of cloud-native architectures and automated everything. I've designed and developed multiple systems from the ground up, managed a small team, and collaborated across organizations to deliver highly customized solutions.
+
+I spent the first several years of my software career as the sole developer for my projects, but I thrive in collaborative environments. I have gained and lost proficiency with a variety of languages over time. My favorite to work with is currently Go (though I haven't gotten to use it enough to consider myself proficient yet)
+
+I've love creating high quality tools and solutions for people and problems.
+
+[Experience and Projects](/experience)
+
+[My Code](/codes)
+
+[About this site](/about)
