@@ -3,6 +3,9 @@ I don't have a lot of publicly available code, my jobs so far have had fairly st
 
 ### Github repos
 
+#### [intercom](https://github.com/figadore/go-intercom/tree/webrtc)
+Wireless home intercom/baby monitor written to work on Raspberry Pi Zero Ws. gRPC signaling is used to initate WebRTC connections to broadcast realtime audio between multiple devices. Under active development
+
 #### [automfa](https://github.com/figadore/automfa)
 A small but fun **go** project I worked on recently. It basically makes my laptop another device to use for multifactor authentication, since it has more physical and technical protection than my phone, this makes it more convenient to log into sites with MFA (e.g. `automfa github` on the command line prints out a 6 digit code). It uses the host OS keychain (or similar) to store the secrets.
 
